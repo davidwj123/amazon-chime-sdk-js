@@ -1671,7 +1671,8 @@ export class DemoMeetingApp
       }
     }
   }
-
+  
+  // call this function to initialize a meeting
   async initializeMeetingSession(configuration: MeetingSessionConfiguration): Promise<void> {
     const consoleLogger = (this.meetingLogger = new ConsoleLogger('SDK', this.logLevel));
     if (this.isLocalHost()) {
